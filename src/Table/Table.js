@@ -13,7 +13,7 @@ function Table() {
   const search_ref = useRef()
   const current_num = parseInt(page) * parseInt(currentPage)
   useEffect(() => {
-    const url = `http://localhost:5000/product-data?size=${page}&page=${currentPage}&search=${searchfild}&sortby=${pLowToHigh} `
+    const url = `https://pagination-server.vercel.app/product-data?size=${page}&page=${currentPage}&search=${searchfild}&sortby=${pLowToHigh} `
     setLoading(true)
 
     fetch(url)
